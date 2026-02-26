@@ -244,7 +244,7 @@ export function OTMonitoring() {
                   {/* Progress */}
                   <div className="space-y-2">
                     <div className="flex justify-between text-sm">
-                      <span>Progress</span>
+                      <span>Progress till now </span>
                       <span>
                         {formatTime(ot.elapsedTime!)} / {formatTime(ot.estimatedDuration!)}
                       </span>
@@ -276,14 +276,14 @@ export function OTMonitoring() {
                 </div>
               )}
 
-              {/* Scheduled Surgery */}
+              {/* Scheduled Surgery  */}
               {ot.status === "scheduled" && (
                 <div className="space-y-2">
                   <div className="text-sm">
                     <div className="font-medium">Next: {ot.surgery}</div>
-                    <div className="text-muted-foreground">Patient: {ot.patient}</div>
-                    <div className="text-muted-foreground">Surgeon: {ot.surgeon}</div>
-                    <div className="text-muted-foreground">Start: {ot.startTime}</div>
+                    <div className="text-muted-foreground">Patient Name: {ot.patient}</div>
+                    <div className="text-muted-foreground">Surgeon Name: {ot.surgeon}</div>
+                    <div className="text-muted-foreground">Start time : {ot.startTime}</div>
                   </div>
                 </div>
               )}
